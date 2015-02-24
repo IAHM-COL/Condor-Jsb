@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="ISO-8859-1"?> 
+
+<PropertyList>
+
+<default>
+<menu n="10">
+<label>Focke-Wulf Condor</label>
+<enabled type="bool">true</enabled>
+
+<item>
+<label>Select Livery</label>
+<binding>
+<command>nasal</command>
+<script>aircraft.livery.dialog.toggle()</script>
+</binding>
+</item>
+
+<item>
+<label>Show/hide gondola</label>
+<binding>
+<command>property-toggle</command>
+<property>/sim/model/hide-gondola</property>
+</binding>
+</item>
+
+<item>
+<label>Select MP-engineer</label>
+<binding>
+<command>nasal</command>
+<script>
+dual_control_tools.engineer_dialog.show(aircraft_dual_control.engineer_type);
+</script>
+</binding>
+</item>
+</menu>
+</default>
+
+</PropertyList>
+

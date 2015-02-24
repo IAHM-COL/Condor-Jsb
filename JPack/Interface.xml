@@ -1,0 +1,124 @@
+<PropertyList>
+
+	<sim>
+
+		<menubar>
+			<default>
+				<menu n="100">
+					<label>Voodoomaster</label>
+					<enabled type="bool">true</enabled>
+
+					<item>
+						<label>Pushback</label>
+						<binding>
+							<command>nasal</command>
+							<script>
+								var pushback = gui.Dialog.new(
+									"sim/gui/voodoomaster/services/dialog", 
+									"JPack/Voodoomaster/Services/Push_Pull.xml"
+								);
+								pushback.open();
+							</script>
+						</binding>
+					</item>
+		
+					<item>
+						<label>Steering configuration</label>
+						<binding>
+							<command>nasal</command>
+							<script>
+								var steering = gui.Dialog.new(
+									"sim/gui/voodoomaster/steering/dialog", 
+									"JPack/Voodoomaster/Steering/SteeringDialog.xml"
+								);
+								steering.open();
+							</script>
+						</binding>
+					</item>
+
+					<item>
+						<label>Ground Crew</label>
+						<binding>
+							<command>nasal</command>
+							<script>
+								var crew = gui.Dialog.new(
+									"sim/gui/voodoomaster/services/dialog", 
+									"JPack/Voodoomaster/Services/GroundServiceDialog.xml"
+								);
+								crew.open();
+							</script>
+						</binding>
+					</item>
+				</menu>
+				<menu n="101">
+					<label>SkyNet</label>
+					<enabled type="bool">true</enabled>
+	
+					<item>
+						<label>Login</label>
+						<enabled type="bool">true</enabled>
+						<binding>
+							<command>nasal</command>
+							<script>
+								var login=gui.Dialog.new("sim/gui/dialogs/ground/dialog", "JPack/SkyNet/Dialogs/Login.xml");
+								login.open();
+							</script>
+						</binding>
+					</item>
+
+					<item>
+						<label>Logout</label>
+						<enabled type="bool">false</enabled>
+						<binding>
+							<command>nasal</command>
+							<script>
+								SkyNet.logout();
+							</script>
+						</binding>
+					</item>
+				</menu>
+			</default>
+		</menubar>
+
+	</sim>
+
+	<controls>
+		<gear>
+			<brake-parking type="double">1.0</brake-parking>
+		</gear>
+	</controls>
+
+	<fdm>
+		<jsbsim>
+			<systems>
+				<pushback>
+					<linked type="int">0</linked>
+				</pushback>
+			</systems>
+		</jsbsim>
+	</fdm>
+
+	<voodoomaster include="Voodoomaster/Voodoomaster-Version.xml">
+		<steering-mode-rudder type="bool">true</steering-mode-rudder>
+		<steering-mode-aileron type="bool">false</steering-mode-aileron>
+	</voodoomaster>
+
+	<skynet include="SkyNet/SkyNet-Version.xml">
+		<username type="string">"*"</username>
+		<callsign type="string">"*"</callsign>
+		<password type="string">"****"</password>
+		<login-pending type="bool">false</login-pending>
+		<session type="string">null</session>
+	</skynet>
+
+	<nasal>
+		<Voodoomaster>
+			<file>JPack/Voodoomaster/Steering/Steering.nas</file>
+		</Voodoomaster>
+		<SkyNet>
+			<file>JPack/SkyNet/Nasal/Login.nas</file>
+		</SkyNet>
+	</nasal>
+
+</PropertyList>
+

@@ -1,0 +1,369 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<PropertyList>
+
+	<!-- 
+		************************************************************************
+		Avro Lancaster
+		Peter Brendt 
+		3D model taken from Emaunel Baranger's Lancaster (on Yasim)
+		************************************************************************
+	-->
+
+	<sim>
+
+		<description>Avro Lancaster Engineer (JSB)</description>
+		<author>BARANGER Emmanuel (3D), Peter Brendt (Jsb)</author>
+		<aircraft-version>0.1</aircraft-version>
+		<status>Alpha</status>
+
+		<startup>
+			<splash-texture>Aircraft/Lancaster-Jsb/lancaster-splash.png</splash-texture>
+		</startup>
+
+		<flight-model>null</flight-model>   <!-- was original for a passenger -->
+
+		<model>
+			<path>Aircraft/Lancaster-Jsb/Models/lancaster-engineer.xml</path>
+			<variant type="int"> 0 </variant>
+			<config>
+				<show-yokes type="bool">true</show-yokes>
+				<show-pilot type="bool">true</show-pilot>
+				<show-copilot type="bool">true</show-copilot>
+				<details-high type="bool">false</details-high>
+				<glass-reflection type="bool">true</glass-reflection>
+				<light-cone type="bool">true</light-cone>
+				<version type="string">civilian-red</version>
+			</config>
+		</model>
+
+		<sound>
+			<path>Aircraft/Lancaster-Jsb/Sounds/lancaster-sound.xml</path>
+		</sound>
+
+		<presets>
+			<onground type="bool">false</onground>
+			<altitude-agl-ft type="double">30</altitude-agl-ft>
+		</presets>
+
+		<menubar include="Dialogs/Engineer-menu.xml"/>
+
+		<!-- ############################### -->
+		<!-- ######## DUAL CONTROL ######### -->
+		<remote>
+			<pilot-callsign type="string"/>
+		</remote>
+
+		<multiplay>
+			<generic>
+			</generic>
+			<lancaster>
+				<engines>
+					<engine n="0">
+						<rpm type="float">1.00</rpm>
+						<throttle type="float">1.00</throttle>
+						<mixture type="float">1.00</mixture>
+						<propeller type="float">1.00</propeller>
+					</engine>
+				</engines>
+			</lancaster>
+		</multiplay>
+		<!-- ######## DUAL CONTROL ######### -->
+		<!-- ############################### -->
+
+		<controls>
+			<engines>
+				<engine n="0">
+					<magnetos type="int">0</magnetos>
+					<rpm>0</rpm>
+					<running>false</running>
+					<boost type="bool">true</boost>
+					<oil-dilution type="bool">false</oil-dilution>
+					<cowl-flaps-cmd type="int">1</cowl-flaps-cmd>
+					<cowl-flaps-norm type="double">1</cowl-flaps-norm>
+					<cowl-flaps-pos type="double">1</cowl-flaps-pos>
+				</engine>
+				<engine n="1">
+					<magnetos type="int">0</magnetos>
+					<rpm>0</rpm>
+					<running>false</running>
+					<boost type="bool">true</boost>
+					<oil-dilution type="bool">false</oil-dilution>
+					<cowl-flaps-cmd type="int">1</cowl-flaps-cmd>
+					<cowl-flaps-norm type="double">1</cowl-flaps-norm>
+					<cowl-flaps-pos type="double">1</cowl-flaps-pos>
+				</engine>
+				<engine n="2">
+					<magnetos type="int">0</magnetos>
+					<rpm>0</rpm>
+					<running>false</running>
+					<boost type="bool">true</boost>
+					<oil-dilution type="bool">false</oil-dilution>
+					<cowl-flaps-cmd type="int">1</cowl-flaps-cmd>
+					<cowl-flaps-norm type="double">1</cowl-flaps-norm>
+					<cowl-flaps-pos type="double">1</cowl-flaps-pos>
+				</engine>
+				<engine n="3">
+					<magnetos type="int">0</magnetos>
+					<rpm>0</rpm>
+					<running>false</running>
+					<boost type="bool">true</boost>
+					<oil-dilution type="bool">false</oil-dilution>
+					<cowl-flaps-cmd type="int">1</cowl-flaps-cmd>
+					<cowl-flaps-norm type="double">1</cowl-flaps-norm>
+					<cowl-flaps-pos type="double">1</cowl-flaps-pos>
+				</engine>
+			</engines>
+		</controls>
+
+		<surface-positions>
+			<flap-pos-norm type="float"/>
+		</surface-positions>
+
+		<!--
+			This block is from the C-47, no equivalent in Lancaster-Jsb-set
+
+		<engines>
+			<engine n="0">
+				<engine-num type="int">0</engine-num>
+				<rpm>500</rpm>
+				<running>0</running>
+				<cranking>0</cranking>
+			</engine>
+	
+			<engine n="1">
+				<engine-num type="int">1</engine-num>
+				<rpm>500</rpm>
+				<running>false</running>
+				<cranking>0</cranking>
+			</engine>
+		</engines>
+		-->
+
+		<dual-control>
+			<pilot>
+				<controls>
+					<flight>
+						<flaps>0</flaps>
+						<elevator-trim>0</elevator-trim>
+						<aileron>0</aileron>
+						<elevator>0</elevator>
+						<rudder>0</rudder>
+					</flight>
+					<gear>
+						<brake-parking></brake-parking>
+						<brake-left></brake-left>
+						<brake-right></brake-right>
+					</gear>
+					<electric>
+						<battery-switch></battery-switch>
+					</electric>
+					<lighting>
+						<instrument-lights></instrument-lights>
+					</lighting>
+					<engines>
+						<engine n="0">
+							<throttle>0</throttle>
+							<magnetos></magnetos>
+							<mixture></mixture>
+							<propeller-pitch></propeller-pitch>
+							<starter></starter>
+						</engine>
+						<engine n="1">
+							<throttle>0</throttle>
+							<magnetos></magnetos>
+							<mixture></mixture>
+							<propeller-pitch></propeller-pitch>
+							<starter></starter>
+						</engine>
+					</engines>
+				</controls>
+			</pilot>
+		</dual-control>
+
+		<input>
+			<keyboard include="XMLs/keyboard.xml"/>
+		</input>
+
+		<chase-distance-m type="double" archive="y"> -30 </chase-distance-m>
+
+		<view n="0">
+			<name>Engineer</name>
+			<type>lookfrom</type>
+			<internal archive="y">true</internal>
+	 		<config>
+				<from-model type="bool">true</from-model>
+				<from-model-idx type="int">0</from-model-idx>
+				<ground-level-nearplane-m type="double">0.01f</ground-level-nearplane-m>
+				<pitch-offset-deg>-5</pitch-offset-deg>
+				<x-offset-m archive="y"> 0.161 </x-offset-m> <!-- Right -->
+				<y-offset-m archive="y">  1.477 </y-offset-m> <!-- Up    -->
+				<z-offset-m archive="y"> -7.856 </z-offset-m> <!-- Back  -->
+				<pitch-offset-deg> 0 </pitch-offset-deg>
+				<heading-offset-deg> 270 </heading-offset-deg>
+				<default-field-of-view-deg> 180 </default-field-of-view-deg>
+			</config>
+		</view>
+
+		<view n="101">
+			<name>Pilot</name>
+			<type>lookFrom</type>
+			<internal archive="y" type="bool">true</internal>
+			<config>
+				<from-model type="bool">true</from-model>
+				<from-model-idx type="int">0</from-model-idx>
+				<ground-level-nearplane-m type="double">0.01f</ground-level-nearplane-m>
+				<x-offset-m archive="y"> -0.231 </x-offset-m> <!-- Right -->
+				<y-offset-m archive="y">  1.477 </y-offset-m> <!-- Up    -->
+				<z-offset-m archive="y"> -7.876 </z-offset-m> <!-- Back  -->
+				<pitch-offset-deg> -5 </pitch-offset-deg>
+				<heading-offset-deg> 0 </heading-offset-deg>
+				<default-field-of-view-deg> 65 </default-field-of-view-deg>
+			</config>
+		</view>
+
+		<view n="102">
+			<name>Navigator</name>
+			<type>lookfrom</type>
+			<internal archive="y">true</internal>
+			<config>
+				<from-model type="bool">true</from-model>
+				<from-model-idx type="int">0</from-model-idx>
+				<ground-level-nearplane-m type="double">0.01f</ground-level-nearplane-m>
+				<pitch-offset-deg>-5</pitch-offset-deg>
+				<x-offset-m archive="y">  0.192 </x-offset-m> <!-- Right -->
+				<y-offset-m archive="y">  1.180 </y-offset-m> <!-- Up    -->
+				<z-offset-m archive="y"> -6.899 </z-offset-m> <!-- Back  -->
+				<pitch-offset-deg> 0 </pitch-offset-deg>
+				<heading-offset-deg> 90 </heading-offset-deg>
+				<default-field-of-view-deg> 75 </default-field-of-view-deg>
+			</config>
+		</view>
+
+		<view n="103">
+			<name>Bomb Aimer</name>
+			<type>lookfrom</type>
+			<internal archive="y">true</internal>
+			<config>
+				<from-model type="bool">true</from-model>
+				<from-model-idx type="int">0</from-model-idx>
+				<ground-level-nearplane-m type="double">0.01f</ground-level-nearplane-m>
+				<pitch-offset-deg>-5</pitch-offset-deg>
+				<x-offset-m archive="y"> 0.161 </x-offset-m> <!-- Right -->
+				<y-offset-m archive="y">  1.077 </y-offset-m> <!-- Up    -->
+				<z-offset-m archive="y"> -9.256 </z-offset-m> <!-- Back  -->
+				<pitch-offset-deg> 0 </pitch-offset-deg>
+				<heading-offset-deg> 0 </heading-offset-deg>
+				<default-field-of-view-deg> 75 </default-field-of-view-deg>
+			</config>
+		</view>
+
+		<view n="104">
+			<name>Radio Operator</name>
+			<type>lookfrom</type>
+			<internal archive="y">true</internal>
+			<config>
+				<from-model type="bool">true</from-model>
+				<from-model-idx type="int">0</from-model-idx>
+				<ground-level-nearplane-m type="double">0.01f</ground-level-nearplane-m>
+				<pitch-offset-deg>-5</pitch-offset-deg>
+				<x-offset-m archive="y"> -0.314 </x-offset-m> <!-- Right -->
+				<y-offset-m archive="y">  1.180 </y-offset-m> <!-- Up    -->
+				<z-offset-m archive="y"> -5.578 </z-offset-m> <!-- Back  -->
+				<pitch-offset-deg> 0 </pitch-offset-deg>
+				<heading-offset-deg> 0 </heading-offset-deg>
+				<default-field-of-view-deg> 75 </default-field-of-view-deg>
+			</config>
+		</view>
+
+		<view n="105">
+			<name>Turret Gunner</name>
+			<type>lookfrom</type>
+			<internal archive="y">true</internal>
+			<config>
+				<from-model type="bool">true</from-model>
+				<from-model-idx type="int">0</from-model-idx>
+				<ground-level-nearplane-m type="double">0.01f</ground-level-nearplane-m>
+				<pitch-offset-deg>-5</pitch-offset-deg>
+				<x-offset-m archive="y">  0.000 </x-offset-m> <!-- Right -->
+				<y-offset-m archive="y">  1.986 </y-offset-m> <!-- Up    -->
+				<z-offset-m archive="y">  3.412 </z-offset-m> <!-- Back  -->
+				<pitch-offset-deg> 0 </pitch-offset-deg>
+				<heading-offset-deg> 180 </heading-offset-deg>
+				<default-field-of-view-deg> 55 </default-field-of-view-deg>
+			</config>
+		</view>
+
+		<view n="106">
+			<name>Tail Gunner</name>
+			<type>lookfrom</type>
+			<internal archive="y">true</internal>
+			<config>
+				<from-model type="bool">true</from-model>
+				<from-model-idx type="int">0</from-model-idx>
+				<ground-level-nearplane-m type="double">0.01f</ground-level-nearplane-m>
+				<pitch-offset-deg>-5</pitch-offset-deg>
+				<x-offset-m archive="y">  0.000 </x-offset-m> <!-- Right -->
+				<y-offset-m archive="y">  1.076 </y-offset-m> <!-- Up    -->
+				<z-offset-m archive="y"> 10.488 </z-offset-m> <!-- Back  -->
+				<pitch-offset-deg> 0 </pitch-offset-deg>
+				<heading-offset-deg> 180 </heading-offset-deg>
+				<default-field-of-view-deg> 55 </default-field-of-view-deg>
+			</config>
+		</view>
+
+		<view n="107">
+			<name>Tail Camera View</name>
+			<type>lookfrom</type>
+			<internal archive="y">true</internal>
+			<config>
+				<from-model type="bool">true</from-model>
+				<from-model-idx type="int">0</from-model-idx>
+				<ground-level-nearplane-m type="double">0.01f</ground-level-nearplane-m>
+				<x-offset-m archive="y"> 0.000 </x-offset-m> <!--Right-->
+				<y-offset-m archive="y"> 5.032 </y-offset-m> <!--Up-->
+				<z-offset-m archive="y"> 8.535 </z-offset-m> <!--Back-->
+				<pitch-offset-deg> -5 </pitch-offset-deg>
+				<default-field-of-view-deg type="double"> 30 </default-field-of-view-deg>
+			</config>
+		</view>
+
+		<help>
+			<title>Avro Lancaster Engineer</title>
+			<!--<key>
+				<name>d</name>
+				<desc>Open/Close crew door</desc>
+			</key>
+			<key>
+				<name>D</name>
+				<desc>Open/Close passenger door</desc>
+			</key>
+			<key>
+				<name>E</name>
+				<desc>Open/Close cargo door</desc>
+			</key>-->
+		</help>
+	</sim>
+	
+	<nasal>
+		<dual_control_tools>
+			<file>Aircraft/Lancaster-Jsb/DualControl/Lancaster/dual-control-tools.nas</file>
+		</dual_control_tools>
+		<aircraft_dual_control>
+			<file>Aircraft/Lancaster-Jsb/DualControl/Lancaster/Lancaster-dual-control.nas</file>
+		</aircraft_dual_control>
+		<dual_control>
+			<file>Aircraft/Lancaster-Jsb/DualControl/Lancaster/engineer-dual-control.nas</file>
+		</dual_control>
+		<VHF22>
+			<file>Aircraft/Generic/DualControl/Instruments/VHF-22/ctl22.nas</file>
+		</VHF22>
+		<doors>
+			<file>Aircraft/Lancaster-Jsb/Nasal/doors.nas</file>
+		</doors>
+		<lancaster>
+			<file>Aircraft/Lancaster-Jsb/Nasal/liveries.nas</file>
+		</lancaster>
+	</nasal>
+
+</PropertyList>

@@ -1,0 +1,48 @@
+<PropertyList>
+
+	<sim>
+		<menubar>
+			<default>
+		<menu n="100">
+			<label>Voodoomaster</label>
+			<enabled type="bool">true</enabled>
+
+			<item>
+				<label>Pushback</label>
+				<binding>
+					<command>dialog-show</command>
+					<dialog-name>pushback</dialog-name>
+				</binding>
+			</item>
+
+			<item>
+				<label>Ground Crew</label>
+				<binding>
+					<command>nasal</command>
+					<script>
+						var crew = gui.Dialog.new("sim/gui/dialogs/ground/dialog", "Aircraft/Loreley/Dialogs/GroundServiceDialog.xml");
+						crew.open();
+					</script>
+				</binding>
+			</item>
+		</menu>
+			</default>
+		</menubar>
+	</sim>
+
+	<skynet include="SkyNet-Version.xml">
+		<username type="string">"*"</username>
+		<callsign type="string">"*"</callsign>
+		<password type="string">"****"</password>
+		<login-pending type="bool">false</login-pending>
+		<session type="string">null</session>
+	</skynet>
+
+	<nasal>
+		<SkyNet>
+			<file>Aircraft/Loreley/JPack/SkyNet/Nasal/Login.nas</file>
+		</SkyNet>
+	</nasal>
+
+</PropertyList>
+

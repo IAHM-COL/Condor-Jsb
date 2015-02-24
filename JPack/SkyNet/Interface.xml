@@ -1,0 +1,52 @@
+<PropertyList>
+
+	<sim>
+		<menubar>
+			<default>
+				<menu n="101">
+					<label>SkyNet</label>
+					<enabled type="bool">true</enabled>
+	
+					<item>
+						<label>Login</label>
+						<enabled type="bool">true</enabled>
+						<binding>
+							<command>nasal</command>
+							<script>
+								var login=gui.Dialog.new("sim/gui/dialogs/ground/dialog", "Aircraft/Loreley/JPack/SkyNet/Dialogs/Login.xml");
+								login.open();
+							</script>
+						</binding>
+					</item>
+
+					<item>
+						<label>Logout</label>
+						<enabled type="bool">false</enabled>
+						<binding>
+							<command>nasal</command>
+							<script>
+								SkyNet.logout();
+							</script>
+						</binding>
+					</item>
+				</menu>
+			</default>
+		</menubar>
+	</sim>
+
+	<skynet include="SkyNet-Version.xml">
+		<username type="string">"*"</username>
+		<callsign type="string">"*"</callsign>
+		<password type="string">"****"</password>
+		<login-pending type="bool">false</login-pending>
+		<session type="string">null</session>
+	</skynet>
+
+	<nasal>
+		<SkyNet>
+			<file>Aircraft/Loreley/JPack/SkyNet/Nasal/Login.nas</file>
+		</SkyNet>
+	</nasal>
+
+</PropertyList>
+
