@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="UTF-8"?>
+﻿<?xml version="1.0" encoding="UTF-8"?>
 
 <PropertyList>
 
@@ -8,28 +8,639 @@
     <!-- Objets opaques -->
     <object-name>panel</object-name>
 
+
     <!-- Objets transparents -->
   </animation>
 
-  <!-- AI
-  <model>
-    <path>Aircraft/B-17/Models/Interior/Panel/Instruments/ai/ai.xml</path>
-    <offsets>
-      <x-m>  0.228 </x-m>
-      <y-m> -0.062 </y-m>
-      <z-m>  0.036 </z-m>
-    </offsets>
-  </model> -->
 
-  <!-- ASI
-  <model>
-    <path>Aircraft/B-17/Models/Interior/Panel/Instruments/asi/asi.xml</path>
-    <offsets>
-      <x-m>  0.230 </x-m>
-      <y-m> -0.167 </y-m>
-      <z-m>  0.036 </z-m>
-    </offsets>
-  </model> -->
 
+
+
+
+
+        <model>
+        <name>Pilot VOR</name>
+        <path>Aircraft/Condor-Jsb/JPack/Instruments/ki206/ki206.xml</path>
+        <offsets>
+           <x-m> -0.2204 </x-m>
+          <y-m> -0.1804 </y-m>
+          <z-m>  0.1746 </z-m>
+            <pitch-deg>0</pitch-deg>
+        </offsets>
+    </model>
+    
+            <model>
+        <name>Pilot VOR 1</name>
+        <path>Aircraft/Condor-Jsb/JPack/Instruments/ki206_1/ki206.xml</path>
+        <offsets>
+           <x-m> -0.2204 </x-m>
+          <y-m> -0.1804 </y-m>
+          <z-m>  0.05546 </z-m>
+            <pitch-deg>0</pitch-deg>
+        </offsets>
+    </model>
+    
+       <model>
+        <path>Aircraft/Condor-Jsb/JPack/Instruments/kn62a/kn62a.xml</path>
+        <offsets>
+          <x-m> -0.2304 </x-m>
+          <y-m> -0.1254 </y-m>
+          <z-m>  -0.0226 </z-m>
+            <pitch-deg>0.0</pitch-deg>
+        </offsets>
+    </model>
+    
+
+
+  <!-- Commo -->
+
+        <model>
+        <name>Pilot Comm1</name>
+        <path>Aircraft/Condor-Jsb/JPack/Instruments/radio/ctl22-com1.xml</path>
+        <offsets>
+          <x-m> -0.2304 </x-m>
+          <y-m>  0.0214 </y-m>
+          <z-m>  -0.0050 </z-m>
+            <pitch-deg>0</pitch-deg>
+        </offsets>
+    </model>
+
+    <model>
+        <name>Pilot Comm2</name>
+        <path>Aircraft/Condor-Jsb/JPack/Instruments/radio/ctl22-com2.xml</path>
+        <offsets>
+          <x-m> -0.2304 </x-m>
+          <y-m>  0.0914 </y-m>
+          <z-m>  -0.0050 </z-m>
+          <pitch-deg>0</pitch-deg>
+        </offsets>
+    </model>
+
+    <model>
+        <name>Pilot Nav1</name>
+        <path>Aircraft/Condor-Jsb/JPack/Instruments/radio/ctl32-nav1.xml</path>
+        <offsets>
+          <x-m> -0.2304 </x-m>
+          <y-m>  -0.0904 </y-m>
+          <z-m>  0.1600 </z-m>
+            <pitch-deg>0</pitch-deg>
+        </offsets>
+    </model>
+  
+       <model>
+        <name>Pilot Nav2</name>
+        <path>Aircraft/Condor-Jsb/JPack/Instruments/radio/ctl32-nav2.xml</path>
+        <offsets>
+          <x-m> -0.2304 </x-m>
+          <y-m>  -0.0904 </y-m>
+         <z-m>  0.05546 </z-m>
+            <pitch-deg>0</pitch-deg>
+        </offsets>
+    </model> 
+
+    <model>
+        <name>Pilot ADF1</name>
+        <path>Aircraft/Condor-Jsb/JPack/Instruments/radio/ctl62.xml</path>
+        <offsets>
+          <x-m> -0.2304 </x-m>
+          <y-m>  0.1614 </y-m>
+          <z-m>  -0.0050 </z-m>
+            <pitch-deg>0</pitch-deg>
+        </offsets>
+    </model>
+    
+            <model>
+        <path>Aircraft/Condor-Jsb/JPack/Instruments/swap-nav/swap-nav.xml</path>
+        <offsets>
+          <x-m> -0.2304 </x-m>
+          <y-m>  -0.0904 </y-m>
+          <z-m>  0.2266 </z-m>
+            <pitch-deg>0.0</pitch-deg>
+        </offsets>
+    </model>
+    
+
+
+
+<!-- CLOCK -->
+<model>
+	<path>Aircraft/Condor-Jsb/JPack/Instruments/Clock/Clock.xml</path>
+	<offsets>
+      <x-m> -0.2320 </x-m>
+      <y-m> -0.5504 </y-m>
+		<z-m> 0.0841</z-m>
+	</offsets>
+</model>
+
+  <!-- ASI -->
+    <model>
+    <path>Aircraft/Condor-Jsb/Models/Interior/Panel/Instruments/asi3/asi300.xml</path>
+    <offsets>
+      <x-m> -0.2304 </x-m>
+      <y-m> -0.4734 </y-m>
+      <z-m>  0.1336 </z-m>
+    </offsets>
+  </model>
+
+  <model>
+    <path>Aircraft/Condor-Jsb/Models/Interior/Panel/Instruments/asi3/asi300.xml</path>
+    <offsets>
+      <x-m> -0.2304 </x-m>
+      <y-m> 0.2804 </y-m>
+      <z-m> 0.1336 </z-m>
+    </offsets>
+  </model>
+
+
+  <!-- AI -->
+
+  <model>
+    <path>Aircraft/Condor-Jsb/JPack/Instruments/ai/ai.xml</path>
+    <offsets>
+      <x-m> -0.2304 </x-m>
+      <y-m> -0.3794 </y-m>
+      <z-m>  0.0346 </z-m>
+    </offsets>
+  </model>
+
+  <model>
+    <path>Aircraft/Condor-Jsb/JPack/Instruments/ai/ai.xml</path>
+    <offsets>
+      <x-m> -0.2304 </x-m>
+      <y-m>  0.3794 </y-m>
+      <z-m>  0.0346 </z-m>
+    </offsets>
+  </model>
+
+
+  <!-- ALT -->
+
+  <model>
+    <path>Aircraft/Condor-Jsb/JPack/Instruments/alt/alt.xml</path>
+    <offsets>
+      <x-m> -0.2304 </x-m>
+      <y-m> -0.4734 </y-m>
+      <z-m>  0.0346 </z-m>
+    </offsets>
+  </model>
+
+  <model>
+    <path>Aircraft/Condor-Jsb/JPack/Instruments/alt/alt.xml</path>
+    <offsets>
+      <x-m> -0.2304 </x-m>
+      <y-m> 0.2804 </y-m>
+      <z-m>  0.0346 </z-m>
+    </offsets>
+  </model>
+
+
+  <!-- TURN -->
+  <model>
+    <path>Aircraft/Condor-Jsb/JPack/Instruments/turn/turn.xml</path>
+    <offsets>
+      <x-m> -0.2304 </x-m>
+      <y-m> -0.3794 </y-m>
+      <z-m>  0.1336 </z-m>
+    </offsets>
+  </model>
+
+  <model>
+    <path>Aircraft/Condor-Jsb/JPack/Instruments/turn/turn.xml</path>
+    <offsets>
+      <x-m> -0.2304 </x-m>
+      <y-m> 0.3794 </y-m>
+      <z-m> 0.1336 </z-m>
+    </offsets>
+  </model>
+
+  <!-- HDG -->
+  <model>
+    <path>Aircraft/Condor-Jsb/JPack/Instruments/hi/hi.xml</path>
+    <offsets>
+      <x-m> -0.2304 </x-m>
+      <y-m> -0.2804 </y-m>
+      <z-m>  0.0346 </z-m>
+    </offsets>
+  </model>
+
+  <model>
+    <path>Aircraft/Condor-Jsb/JPack/Instruments/hi/hi.xml</path>
+    <offsets>
+      <x-m> -0.2304 </x-m>
+      <y-m> 0.4784 </y-m>
+      <z-m>  0.0346 </z-m>
+    </offsets>
+  </model>
+
+
+  <!-- VSI -->
+
+ <model>
+    <path>Aircraft/Condor-Jsb/JPack/Instruments/vsi/vsi.xml</path>
+    <offsets>
+      <x-m> -0.2304 </x-m>
+      <y-m> -0.2804 </y-m>
+      <z-m>  0.1336 </z-m>
+    </offsets>
+  </model>
+
+  <model>
+    <path>Aircraft/Condor-Jsb/JPack/Instruments/vsi/vsi.xml</path>
+    <offsets>
+      <x-m> -0.2304 </x-m>
+      <y-m> 0.4784 </y-m>
+      <z-m> 0.1336 </z-m>
+    </offsets>
+  </model>
+
+
+ <model>
+  <path>Aircraft/Condor-Jsb/JPack/Instruments/fuel2/fuel.xml</path>
+  <offsets>
+           <x-m>-0.2204</x-m>
+           <y-m> 0.2654 </y-m>
+          <z-m>  0.2250 </z-m>
+  </offsets>
+ </model>
+ 
+
+
+ <!-- MANIFOLD PRESSURES -->
+ <model>
+  <path>Aircraft/Condor-Jsb/JPack/Instruments/mp/mp1.xml</path>
+  <offsets>
+           <x-m>-0.2204</x-m>
+           <y-m> -0.0204 </y-m>
+          <z-m>  0.2466 </z-m>
+  </offsets>
+ </model>
+ 
+  <model>
+  <path>Aircraft/Condor-Jsb/JPack/Instruments/mp/mp2.xml</path>
+  <offsets>
+           <x-m>-0.2204</x-m>
+           <y-m> 0.0504 </y-m>
+          <z-m>  0.2466 </z-m>
+  </offsets>
+ </model>
+ 
+  <model>
+  <path>Aircraft/Condor-Jsb/JPack/Instruments/mp/mp3.xml</path>
+  <offsets>
+           <x-m>-0.2204</x-m>
+           <y-m> 0.1204 </y-m>
+          <z-m>  0.2466 </z-m>
+  </offsets>
+ </model>
+ 
+  <model>
+  <path>Aircraft/Condor-Jsb/JPack/Instruments/mp/mp4.xml</path>
+  <offsets>
+           <x-m>-0.2204</x-m>
+           <y-m> 0.1904 </y-m>
+          <z-m>  0.2466 </z-m>
+  </offsets>
+ </model>
+ 
+ <!-- OIL PRESSURES -->
+ 
+  <model>
+  <path>Aircraft/Condor-Jsb/JPack/Instruments/oil/oilp1.xml</path>
+  <offsets>
+           <x-m>-0.2204</x-m>
+           <y-m> -0.0204 </y-m>
+          <z-m>  0.1925 </z-m>
+  </offsets>
+ </model>
+ 
+   <model>
+  <path>Aircraft/Condor-Jsb/JPack/Instruments/oil/oilp2.xml</path>
+  <offsets>
+           <x-m>-0.2204</x-m>
+           <y-m> 0.0504 </y-m>
+          <z-m>  0.1925 </z-m>
+  </offsets>
+ </model>
+ 
+   <model>
+  <path>Aircraft/Condor-Jsb/JPack/Instruments/oil/oilp3.xml</path>
+  <offsets>
+           <x-m>-0.2204</x-m>
+           <y-m> 0.1204 </y-m>
+          <z-m>  0.1925 </z-m>
+  </offsets>
+ </model>
+ 
+   <model>
+  <path>Aircraft/Condor-Jsb/JPack/Instruments/oil/oilp4.xml</path>
+  <offsets>
+           <x-m>-0.2204</x-m>
+           <y-m> 0.1904 </y-m>
+          <z-m>  0.1925 </z-m>
+  </offsets>
+ </model>
+ 
+ <!-- ENGINE RPM -->
+ <model>
+  <path>Aircraft/Condor-Jsb/JPack/Instruments/rpm/rpm-gauge1.xml</path>
+  <offsets>
+           <x-m>-0.2204</x-m>
+           <y-m> -0.0204 </y-m>
+          <z-m>  0.1400 </z-m>
+  </offsets>
+ </model>
+ 
+ <model>
+  <path>Aircraft/Condor-Jsb/JPack/Instruments/rpm/rpm-gauge2.xml</path>
+  <offsets>
+           <x-m>-0.2204</x-m>
+           <y-m> 0.0504 </y-m>
+          <z-m>  0.1400 </z-m>
+  </offsets>
+ </model>
+ 
+ <model>
+  <path>Aircraft/Condor-Jsb/JPack/Instruments/rpm/rpm-gauge3.xml</path>
+  <offsets>
+           <x-m>-0.2204</x-m>
+           <y-m> 0.1204 </y-m>
+          <z-m>  0.1400 </z-m>
+  </offsets>
+ </model>
+ 
+ <model>
+  <path>Aircraft/Condor-Jsb/JPack/Instruments/rpm/rpm-gauge4.xml</path>
+  <offsets>
+           <x-m>-0.2204</x-m>
+           <y-m> 0.1904 </y-m>
+          <z-m>  0.1400 </z-m>
+  </offsets>
+ </model>
+ 
+ <!-- FUEL FLOW -->
+  <model>
+  <path>Aircraft/Condor-Jsb/JPack/Instruments/fuel/LHfuelflow.xml</path>
+  <offsets>
+           <x-m>-0.2204</x-m>
+           <y-m> -0.0204 </y-m>
+          <z-m>  0.0867 </z-m>
+  </offsets>
+ </model>
+ 
+   <model>
+  <path>Aircraft/Condor-Jsb/JPack/Instruments/fuel/LHfuelflow1.xml</path>
+  <offsets>
+           <x-m>-0.2204</x-m>
+           <y-m> 0.0504 </y-m>
+          <z-m>  0.0867 </z-m>
+  </offsets>
+ </model>
+ 
+   <model>
+  <path>Aircraft/Condor-Jsb/JPack/Instruments/fuel/LHfuelflow2.xml</path>
+  <offsets>
+           <x-m>-0.2204</x-m>
+           <y-m> 0.1204 </y-m>
+          <z-m>  0.0867 </z-m>
+  </offsets>
+ </model>
+ 
+   <model>
+  <path>Aircraft/Condor-Jsb/JPack/Instruments/fuel/LHfuelflow3.xml</path>
+  <offsets>
+           <x-m>-0.2204</x-m>
+           <y-m> 0.1904 </y-m>
+          <z-m>  0.0867 </z-m>
+  </offsets>
+ </model>
+
+<!-- Throttles -->
+  <animation>
+    <type>rotate</type>
+    <object-name>throttleA</object-name>
+    <property>controls/engines/engine[0]/throttle</property>
+    <factor> 90 </factor>
+    <offset-deg>000</offset-deg>
+  
+    <center>
+      <x-m>  0.020 </x-m>
+      <y-m> -0.0331 </y-m>
+      <z-m>  -0.0975 </z-m>
+    </center>
+    <axis>
+      <x>  0 </x>
+      <y> -1 </y>
+      <z>  0 </z>
+    </axis>
+  </animation>
+
+  <animation>
+    <type>rotate</type>
+    <object-name>throttleB</object-name>
+    <property>controls/engines/engine[1]/throttle</property>
+    <factor> 90 </factor>
+    <offset-deg>000</offset-deg>
+  
+    <center>
+      <x-m>  0.020 </x-m>
+      <y-m> 0.0060 </y-m>
+      <z-m>  -0.0975 </z-m>
+    </center>
+    <axis>
+      <x>  0 </x>
+      <y> -1 </y>
+      <z>  0 </z>
+    </axis>
+  </animation>
+  
+    <animation>
+    <type>rotate</type>
+    <object-name>throttleC</object-name>
+    <property>controls/engines/engine[2]/throttle</property>
+    <factor> 90 </factor>
+    <offset-deg>000</offset-deg>
+  
+    <center>
+      <x-m>  0.020 </x-m>
+      <y-m> 0.0246 </y-m>
+      <z-m>  -0.0975 </z-m>
+    </center>
+    <axis>
+      <x>  0 </x>
+      <y> -1 </y>
+      <z>  0 </z>
+    </axis>
+  </animation>
+
+  <animation>
+    <type>rotate</type>
+    <object-name>throttleD</object-name>
+    <property>controls/engines/engine[3]/throttle</property>
+    <factor> 90 </factor>
+    <offset-deg>000</offset-deg>
+  
+    <center>
+      <x-m>  0.020 </x-m>
+      <y-m> 0.0500 </y-m>
+      <z-m>  -0.0975 </z-m>
+    </center>
+    <axis>
+      <x>  0 </x>
+      <y> -1 </y>
+      <z>  0 </z>
+    </axis>
+  </animation>
+
+  <!-- Mixtures -->
+  <animation>
+    <type>rotate</type>
+    <object-name>mixtureA</object-name>
+    <property>controls/engines/engine[0]/mixture</property>
+    <factor> 60 </factor>
+    <offset-deg>000</offset-deg>
+    
+    <center>
+      <x-m>  0.1602 </x-m>
+      <y-m> -0.00255 </y-m>
+      <z-m>  -0.1953 </z-m>
+    </center>
+    <axis>
+      <x>  0 </x>
+      <y> -1 </y>
+      <z>  0 </z>
+    </axis>
+  </animation>
+
+  <animation>
+    <type>rotate</type>
+    <object-name>mixtureB</object-name>
+    <property>controls/engines/engine[1]/mixture</property>
+    <factor> 60 </factor>
+    <offset-deg>000</offset-deg>
+    
+    <center>
+      <x-m>  0.1602 </x-m>
+      <y-m> -0.0099 </y-m>
+      <z-m>  -0.1953 </z-m>
+    </center>
+    <axis>
+      <x>  0 </x>
+      <y> -1 </y>
+      <z>  0 </z>
+    </axis>
+  </animation>
+  
+    <animation>
+    <type>rotate</type>
+    <object-name>mixtureC</object-name>
+    <property>controls/engines/engine[2]/mixture</property>
+    <factor> 60 </factor>
+    <offset-deg>000</offset-deg>
+    
+    <center>
+      <x-m>  0.1602 </x-m>
+      <y-m> 0.0102 </y-m>
+      <z-m>  -0.1953 </z-m>
+    </center>
+    <axis>
+      <x>  0 </x>
+      <y> -1 </y>
+      <z>  0 </z>
+    </axis>
+  </animation>
+  
+    <animation>
+    <type>rotate</type>
+    <object-name>mixtureD</object-name>
+    <property>controls/engines/engine[3]/mixture</property>
+    <factor> 60 </factor>
+    <offset-deg>000</offset-deg>
+    
+    <center>
+      <x-m>  0.1602 </x-m>
+      <y-m> 0.0261 </y-m>
+      <z-m>  -0.1953 </z-m>
+    </center>
+    <axis>
+      <x>  0 </x>
+      <y> -1 </y>
+      <z>  0 </z>
+    </axis>
+  </animation>
+
+  <!-- Propellers -->
+  <animation>
+    <type>rotate</type>
+    <object-name>propA</object-name>
+    <property>controls/engines/engine[0]/propeller-pitch</property>
+    <factor> 90 </factor>
+  
+    <center>
+      <x-m> 0.2153 </x-m>
+      <y-m> -0.00172 </y-m>
+      <z-m> -0.2103 </z-m>
+    </center>
+     <axis>
+      <x> 0 </x>
+      <y> -1 </y>
+      <z> 0 </z>
+    </axis>
+  </animation>
+
+  <animation>
+    <type>rotate</type>
+    <object-name>propB</object-name>
+    <property>controls/engines/engine[1]/propeller-pitch</property>
+    <factor> 90 </factor>
+    
+    <center>
+      <x-m> 0.2153 </x-m>
+      <y-m> -0.0030 </y-m>
+      <z-m> -0.2103 </z-m>
+    </center>
+    <axis>
+      <x> 0 </x>
+      <y> -1 </y>
+      <z> 0 </z>
+    </axis>
+  </animation>
+  
+<animation>
+    <type>rotate</type>
+    <object-name>propC</object-name>
+    <property>controls/engines/engine[2]/propeller-pitch</property>
+    <factor> 90 </factor>
+
+    <center>
+      <x-m> 0.2153 </x-m>
+      <y-m> 0.0129 </y-m>
+      <z-m> -0.2103 </z-m>
+    </center>
+    <axis>
+      <x> 0 </x>
+      <y> -1 </y>
+      <z> 0 </z>
+    </axis>
+  </animation>
+
+  <animation>
+    <type>rotate</type>
+    <object-name>propD</object-name>
+    <property>controls/engines/engine[3]/propeller-pitch</property>
+    <factor> 90 </factor>
+
+    <center>
+      <x-m> 0.2153 </x-m>
+      <y-m> 0.0253 </y-m>
+      <z-m> -0.2103 </z-m>
+    </center>
+    <axis>
+      <x> 0 </x>
+      <y> -1 </y>
+      <z> 0 </z>
+    </axis>
+  </animation>
+  
+  
 </PropertyList>
 
