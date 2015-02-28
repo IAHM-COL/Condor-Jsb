@@ -1,0 +1,49 @@
+﻿<?xml version="1.0"?>
+<PropertyList>
+
+    <path>oilgauge.ac</path>
+
+    <animation>
+        <type>material</type>
+        <object-name>OilFace</object-name>
+        <object-name>Oil.needle1</object-name>
+        <object-name>Oil.needle2</object-name>
+        <emission>
+            <red>0.035</red>
+            <green>0.012</green>
+            <blue>0.007</blue>
+            <factor-prop>systems/electrical/outputs/eng-lights</factor-prop>
+        </emission>
+    </animation>
+
+    <animation>
+        <type>rotate</type>
+        <object-name>Oil.needle2</object-name>
+        <property>engines/engine[1]/oil-temperature-degf</property>
+        <interpolation>
+            <entry><ind>0.0</ind><dep>0.0</dep></entry>
+            <entry><ind>100.0</ind><dep>284.0</dep></entry>
+        </interpolation>
+        <axis>
+            <x>1.0</x>
+            <y>0</y>
+            <z>0.0</z>
+        </axis>
+    </animation>
+
+    <animation>
+        <type>rotate</type>
+        <object-name>Oil.needle1</object-name>
+        <property>engines/engine[1]/oil-pressure-psi</property>
+        <interpolation>
+            <entry><ind>0.0</ind><dep>0.0</dep></entry>
+            <entry><ind>200.0</ind><dep>-103.0</dep></entry>
+        </interpolation>
+        <axis>
+            <x>-1.0</x>
+            <y>0</y>
+            <z>0.0</z>
+        </axis>
+    </animation>
+
+</PropertyList>

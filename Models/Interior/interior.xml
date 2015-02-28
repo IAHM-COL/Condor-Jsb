@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="UTF-8"?>
+﻿<?xml version="1.0" encoding="UTF-8"?>
 
 <PropertyList>
 
@@ -9,6 +9,18 @@
     <object-name>interieur</object-name>
     <object-name>inttour</object-name>
     <object-name>inttourvitres</object-name>
+        <object-name>throttleA</object-name>
+    <object-name>throttleB</object-name>
+    <object-name>throttleC</object-name>
+    <object-name>throttleD</object-name>
+    <object-name>mixtureA</object-name>
+    <object-name>mixtureB</object-name>
+    <object-name>mixtureC</object-name>
+    <object-name>mixtureD</object-name>
+    <object-name>propA</object-name>
+    <object-name>propB</object-name>
+    <object-name>propC</object-name>
+    <object-name>propD</object-name>
 
     <!-- Objets transparents -->
     <object-name>intvitres</object-name>
@@ -29,7 +41,7 @@
 
   <!-- Pilote -->
   <model>
-    <path>Aircraft/Fw200/Models/Pilot/pilot.xml</path>
+    <path>Aircraft/Condor-Jsb/Models/Pilot/pilot.xml</path>
     <offsets>
       <x-m> -9.804 </x-m>
       <y-m> -0.470 </y-m>
@@ -42,13 +54,18 @@
 
   <!-- Planche de bord -->
   <model>
-    <path>Aircraft/Fw200/Models/Interior/Panel/panel.xml</path>
+    <path>Aircraft/Condor-Jsb/Models/Interior/Panel/panel.xml</path>
     <offsets>
       <x-m> -10.296 </x-m>
       <y-m>   0.000 </y-m>
       <z-m>   0.208 </z-m>
     </offsets>
   </model>
+
+
+  
+
+
 
 </PropertyList>
 
