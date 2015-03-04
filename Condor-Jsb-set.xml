@@ -489,7 +489,7 @@
 			<file>Aircraft/Condor-Jsb/Nasal/doors.nas</file>
 		</doors>
 		<condor>
-      <file>Aircraft/Condor-Jsb/Nasal/kn62a.nas</file>
+      			<file>Aircraft/Condor-Jsb/Nasal/kn62a.nas</file>
 			<file>Aircraft/Condor-Jsb/Nasal/liveries.nas</file>
 			<file>Aircraft/Condor-Jsb/Nasal/fuelsystem.nas</file>
 		</condor>
