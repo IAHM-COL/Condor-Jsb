@@ -3,40 +3,62 @@
 <PropertyList>
   
   <path>Gondola.ac</path>
+
+  <!--Correct texturizing -->
+  <animation>
+    <type>material</type>
+    <object-name>Gondola</object-name>
+    <property-base>sim/model/livery</property-base>
+    <texture-prop>texture</texture-prop>
+    <texture>gondola.png</texture>
+    <specular>
+      <red-prop>specular/red</red-prop>
+      <green-prop>specular/green</green-prop>
+      <blue-prop>specular/blue</blue-prop>
+    </specular>
+    <emission>
+      <red-prop>emission/red</red-prop>
+      <green-prop>emission/green</green-prop>
+      <blue-prop>emission/blue</blue-prop>
+    </emission>
+  </animation>
   
+  <animation>
+    <type>material</type>
+    <object-name>seat</object-name>
+    <property-base>sim/model/livery</property-base>
+    <texture-prop>texture</texture-prop>
+    <texture>Seat.png</texture>
+  </animation>
+  
+  <animation>
+    <type>material</type>
+    <object-name>Gondola</object-name>
+    <object-name>glass</object-name>
+    <object-name>seat</object-name>
+    <emission>
+      <property>/sim/model/hide-gondola</property>
+      <red>   0.5 </red>
+      <green> 0.3 </green>
+      <blue>  0.3 </blue>
+    </emission>
+  </animation>
 
+  <animation>
+    <name>gondola</name>
+    <object-name>Gondola</object-name>
+    <object-name>glass</object-name>
+    <object-name>seat</object-name>
+  </animation>
 
-<animation>
-<type>material</type>
-<object-name>Gondola</object-name>
-<object-name>glass</object-name>
-<object-name>seat</object-name>
-<emission>
-<property>/sim/model/hide-gondola</property>
-<red>   0.5 </red>
-<green> 0.3 </green>
-<blue>  0.3 </blue>
-</emission>
-</animation>
-
-
-<animation>
-<name>gondola</name>
-<object-name>Gondola</object-name>
-<object-name>glass</object-name>
-<object-name>seat</object-name>
-</animation>
-
-
-
-<animation>
-<type>select</type>
-<object-name>Gondola</object-name>
-<object-name>glass</object-name>
-<object-name>seat</object-name>
-<condition>
-<property>/sim/model/hide-gondola</property>
-</condition>
-</animation>
+  <animation>
+    <type>select</type>
+    <object-name>Gondola</object-name>
+    <object-name>glass</object-name>
+    <object-name>seat</object-name>
+    <condition>
+      <property>/sim/model/hide-gondola</property>
+    </condition>
+  </animation>
 
 </PropertyList>
