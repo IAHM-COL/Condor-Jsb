@@ -73,7 +73,7 @@
       </volume>
       <pitch>
         <property>/engines/engine[0]/rpm</property>
-        <factor>0.00022</factor>
+        <factor>0.00020</factor>
         <min>0.0</min>
         <max>1.0</max>
       </pitch>
@@ -102,7 +102,7 @@
       </volume>
       <pitch>
         <property>/engines/engine[0]/rpm</property>
-        <factor>0.00022</factor>
+        <factor>0.00020</factor>
         <min>0.0</min>
         <max>1.0</max>
       </pitch>
@@ -179,7 +179,7 @@
       </volume>
       <pitch>
         <property>/engines/engine[1]/rpm</property>
-        <factor>0.00022</factor>
+        <factor>0.00020</factor>
         <min>0.0</min>
         <max>1.0</max>
       </pitch>
@@ -208,7 +208,7 @@
       </volume>
       <pitch>
         <property>/engines/engine[1]/rpm</property>
-        <factor>0.00022</factor>
+        <factor>0.00020</factor>
         <min>0.0</min>
         <max>1.0</max>
       </pitch>
@@ -285,7 +285,7 @@
       </volume>
       <pitch>
         <property>/engines/engine[2]/rpm</property>
-        <factor>0.00022</factor>
+        <factor>0.00020</factor>
         <min>0.0</min>
         <max>1.0</max>
       </pitch>
@@ -314,7 +314,7 @@
       </volume>
       <pitch>
         <property>/engines/engine[2]/rpm</property>
-        <factor>0.00022</factor>
+        <factor>0.00020</factor>
         <min>0.0</min>
         <max>1.0</max>
       </pitch>
@@ -391,7 +391,7 @@
       </volume>
       <pitch>
         <property>/engines/engine[3]/rpm</property>
-        <factor>0.00022</factor>
+        <factor>0.00020</factor>
         <min>0.0</min>
         <max>1.0</max>
       </pitch>
@@ -420,7 +420,7 @@
       </volume>
       <pitch>
         <property>/engines/engine[3]/rpm</property>
-        <factor>0.00022</factor>
+        <factor>0.00020</factor>
         <min>0.0</min>
         <max>1.0</max>
       </pitch>

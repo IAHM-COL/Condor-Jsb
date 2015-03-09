@@ -462,6 +462,15 @@
 			<!-- path>Aircraft/Condor-Jsb/Systems/Autopilot.xml</path -->
 			<path>Aircraft/JPack/Voodoomaster/Systems/SYS7_1_autopilot.xml</path>
 		</autopilot>
+		<refuel>
+			<type>probe</type>
+			<serviceable type="bool">true</serviceable>
+			<max-fuel-transfer-lbs-min>6000</max-fuel-transfer-lbs-min>
+			<offset-x-m>-33.908398</offset-x-m>
+			<offset-y-m>0.423219</offset-y-m>
+			<offset-z-m>0.0</offset-z-m>
+			<range type="int">200</range> <!-- 200m range to compensate for rubber banding -->
+		</refuel>	
 	</systems>
 
 	<!-- Initial values for autopilot SYS7 -->
@@ -482,6 +491,11 @@
 		<steering-wheel type="int">2</steering-wheel>
 		<steering-type type="string">Taildragger-steer</steering-type>	<!-- Alternativ: Taildragger-lock or TriCycle -->
 	</voodoomaster>
+
+	<aar> 
+		<!-- file>Aircraft/Generic/aar.nas</file -->
+		<file>Common/aar/aar.nas</file>
+	</aar>
 
 	<!-- all the nasal files in their namespaces -->
 	<nasal>
