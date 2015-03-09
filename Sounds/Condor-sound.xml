@@ -307,14 +307,14 @@
       </condition>
       <volume>
         <property>/engines/engine[2]/rpm</property>
-        <factor>0.00022</factor>
+        <factor>0.00033</factor>
         <min>0.0</min>
         <max>1.00</max>
         <offset>0.0</offset>
       </volume>
       <pitch>
         <property>/engines/engine[2]/rpm</property>
-        <factor>0.00033</factor>
+        <factor>0.00022</factor>
         <min>0.0</min>
         <max>1.0</max>
       </pitch>
@@ -420,7 +420,7 @@
       </volume>
       <pitch>
         <property>/engines/engine[3]/rpm</property>
-        <factor>0.00033</factor>
+        <factor>0.00022</factor>
         <min>0.0</min>
         <max>1.0</max>
       </pitch>
