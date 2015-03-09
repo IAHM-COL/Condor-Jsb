@@ -50,12 +50,36 @@
     <object-name>glass</object-name>
     <object-name>seat</object-name>
   </animation>
+ 
+  <!-- Mitrailleuses -->
+  <!-- Up turet -->
+  <model>
+    <name>GunsMobileLeft</name>
+    <path>Aircraft/Condor-Jsb/Models/Guns/guns.xml</path>
+    <offsets>
+      <x-m> -9.38878 </x-m>
+      <y-m> 0.12310 </y-m>
+      <z-m>  -1.1 </z-m>
+    </offsets>
+  </model>
+
+  <model>
+    <name>GunsMobileRight</name>
+    <path>Aircraft/Condor-Jsb/Models/Guns/guns.xml</path>
+    <offsets>
+      <x-m> -9.38878 </x-m>
+      <y-m> -0.12310 </y-m>
+      <z-m>  -1.1 </z-m>
+    </offsets>
+  </model>
 
   <animation>
     <type>select</type>
     <object-name>Gondola</object-name>
     <object-name>glass</object-name>
     <object-name>seat</object-name>
+    <object-name>GunsMobileLeft</object-name>
+    <object-name>GunsMobileRight</object-name>
     <condition>
       <property>/sim/model/hide-gondola</property>
     </condition>
