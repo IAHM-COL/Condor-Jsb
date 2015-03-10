@@ -94,18 +94,24 @@
     </axis>
   </animation>
   
-  <animation>
-    <type>select</type>
-    <name>TourelledeToit</name>
-    <object-name>tourellemobile</object-name>
-    <object-name>inttourellemobile</object-name>
-    <object-name>verretourellemobile</object-name>
-    <object-name>intverretourelle1</object-name>
-    <object-name>GunsMobileLeft</object-name>
-    <object-name>GunsMobileRight</object-name>
-    <condition>
-      <property>/sim/model/hide-gondola</property>
-    </condition>
-  </animation>
+	<animation>
+		<type>select</type>
+		<name>TourelledeToit</name>
+		<object-name>tourellemobile</object-name>
+		<object-name>inttourellemobile</object-name>
+		<object-name>verretourellemobile</object-name>
+		<object-name>intverretourelle1</object-name>
+		<object-name>GunsMobileLeft</object-name>
+		<object-name>GunsMobileRight</object-name>
+		<condition>
+			<or>
+				<equals>
+					<property>/sim/model/livery/name</property>
+					<value>BS-AJ</value>
+				</equals>
+				<property>/sim/model/hide-gondola</property>
+			</or>
+		</condition>
+	</animation>
 
 </PropertyList>

@@ -73,16 +73,40 @@
     </offsets>
   </model>
 
-  <animation>
-    <type>select</type>
-    <object-name>Gondola</object-name>
-    <object-name>glass</object-name>
-    <object-name>seat</object-name>
-    <object-name>GunsMobileLeft</object-name>
-    <object-name>GunsMobileRight</object-name>
-    <condition>
-      <property>/sim/model/hide-gondola</property>
-    </condition>
-  </animation>
+	<animation>
+		<type>select</type>
+		<object-name>Gondola</object-name>
+		<object-name>glass</object-name>
+		<object-name>seat</object-name>
+		<object-name>GunsMobileLeft</object-name>
+		<object-name>GunsMobileRight</object-name>
+		<condition>
+			<or>
+				<and>
+					<property>/voodoomaster/ismain</property>
+					<or>
+						<equals>
+							<property>/sim/model/livery/name</property>
+							<value>BS-AJ</value>
+						</equals>
+						<property>/sim/model/hide-gondola</property>
+					</or>
+				</and>
+
+				<and>
+					<not>
+						<property>/voodoomaster/ismain</property>
+					</not>
+					<or>
+						<equals>
+							<property>/sim/model/livery/name</property>
+							<value>BS-AJ</value>
+						</equals>
+						<property>/sim/model/hide-gondola</property>
+					</or>
+				</and>
+			</or>
+		</condition>
+	</animation>
 
 </PropertyList>

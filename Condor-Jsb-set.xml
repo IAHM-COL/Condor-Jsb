@@ -20,7 +20,7 @@
 		<status>Alpha</status>
 		<!-- 
 			Currently: 
-			Multiply via FG-MP-Network cancelled, integration of Voodoomaster and SkyNet planned
+			Multiplay via FG-MP-Network cancelled, integration of Voodoomaster and SkyNet planned
 		-->
 
 		<rating>
@@ -490,6 +490,7 @@
 	<voodoomaster>
 		<steering-wheel type="int">2</steering-wheel>
 		<steering-type type="string">Taildragger-steer</steering-type>	<!-- Alternativ: Taildragger-lock or TriCycle -->
+		<ismain type="bool">true</ismain>
 	</voodoomaster>
 
 	<aar> 
