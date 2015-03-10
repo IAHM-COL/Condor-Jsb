@@ -30,8 +30,8 @@
 	<bore unit="IN">    6.06 </bore>
 	<cylinders> 9.0  </cylinders>
 	<compression-ratio> 12.0 </compression-ratio>
-	<!-- numboostspeed>2</numboostspeed>
-	<boostmanual>1</boostmanual>
+	<numboostspeeds>2</numboostspeeds>
+	<boostmanual>0</boostmanual>
 	<boostoverride>1</boostoverride>
 	<ratedboost1 unit="INHG"> 18.1 </ratedboost1>
 	<ratedpower1 unit="HP"> 1490 </ratedpower1>
@@ -40,6 +40,6 @@
 	<ratedboost2 unit="INHG"> 24.1 </ratedboost2>
 	<ratedpower2 unit="HP"> 2090 </ratedpower2>
 	<ratedrpm2> 2800 </ratedrpm2>
-	<ratedaltitude2 unit="FT"> 16000 </ratedaltitude2 -->	
+	<ratedaltitude2 unit="FT"> 16000 </ratedaltitude2>	
 </piston_engine>
 
