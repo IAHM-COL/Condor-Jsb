@@ -23,8 +23,6 @@ var contactN = nil;
 var aimodelsN = nil;
 var types = {};
 
-
-
 var update_loop = func {
 	# check for contact with tanker aircraft
 	var tankers = [];
@@ -51,6 +49,9 @@ var update_loop = func {
 	}
 
 	var refueling = serviceable and activeTanker > -1;
+print("refueling ", refueling);
+print("serviceable ", serviceable);
+print("activeTanker ", activeTanker);
 	
 	if (refuelingN.getNode("report-contact", 1).getValue()) {
 		if (refueling and !contactN.getValue()) {
@@ -71,6 +72,7 @@ var update_loop = func {
 		var fuel = e.getNode("fuel-consumed-lbs");
 		consumed += fuel.getValue();
 		fuel.setDoubleValue(0);
+print("consumed ", consumed);
 	}
 
 	# calculate fuel received
@@ -152,7 +154,7 @@ var update_loop = func {
 				t.getNode("level-lbs").setDoubleValue(lbs);
 			}
 
-			# print ("available ", available , " fuel_per_tank " , fuel_per_tank);
+			print("available ", available , " fuel_per_tank " , fuel_per_tank);
 		}
 	}
 
@@ -180,14 +182,19 @@ var update_loop = func {
 }
 
 
+print("AAR initializing ");
 
 setlistener("/sim/signals/fdm-initialized", func {
 	if (contains(globals, "fuel") and typeof(fuel) == "hash") fuel.loop = func nil;       # kill $FG_ROOT/Nasal/fuel.nas' loop
 
 	contactN = props.globals.initNode("/systems/refuel/contact", 0, "BOOL");
+print("contactN ", contactN);
 	refuelingN = props.globals.getNode("/systems/refuel", 1);
+print("refuelingN ", refuelingN);
 	aimodelsN = props.globals.getNode("ai/models", 1);
+print("aimodelsN ", aimodelsN);
 	engines = props.globals.getNode("engines", 1).getChildren("engine");
+print("engines ", engines);
 
 	foreach (var e; engines) {
 		e.getNode("fuel-consumed-lbs", 1).setDoubleValue(0);

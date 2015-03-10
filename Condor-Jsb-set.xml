@@ -506,7 +506,11 @@
       			<file>Aircraft/Condor-Jsb/Nasal/kn62a.nas</file>
 			<file>Aircraft/Condor-Jsb/Nasal/liveries.nas</file>
 			<file>Aircraft/Condor-Jsb/Nasal/fuelsystem.nas</file>
-		</condor>
+		</condor>	
+		<aar>
+			<!-- file>Aircraft/Generic/aar.nas</file -->
+			<file>Common/aar/aar.nas</file>
+		</aar>
 	</nasal>
 
 </PropertyList>
