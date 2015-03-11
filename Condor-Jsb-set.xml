@@ -97,6 +97,11 @@
 		<!-- #### Instrumentation in sim???? -->
 
 		<!-- #### MP section if exists -->
+		<multiplay>
+			<generic>
+  				<string n="1" alias="/sim/model/livery/name"/>
+			</generic>
+		</multiplay>
 		
 		<!-- #### HUD section if exists -->
 		  
@@ -110,7 +115,7 @@
 			</redout>
 		</rendering>
 
-		<!-- All the views (crew stations + 1 more to allow moving around + extras liek Tail Camera) -->
+		<!-- All the views (crew stations + 1 more to allow moving around + extras like Tail Camera) -->
 		<view n="0">
 			<name>Pilot</name>
 			<type>lookFrom</type>
@@ -119,9 +124,9 @@
 				<from-model type="bool">true</from-model>
 				<from-model-idx type="int">0</from-model-idx>
 				<ground-level-nearplane-m type="double">0.01f</ground-level-nearplane-m>
-      <x-offset-m archive="y"> -0.470 </x-offset-m>	<!-- Right -->
-      <y-offset-m archive="y">  0.770 </y-offset-m>	<!-- Up    -->
-      <z-offset-m archive="y"> -9.646 </z-offset-m>	<!-- Back  -->
+				<x-offset-m archive="y"> -0.470 </x-offset-m>	<!-- Right -->
+				<y-offset-m archive="y">  0.770 </y-offset-m>	<!-- Up    -->
+				<z-offset-m archive="y"> -9.646 </z-offset-m>	<!-- Back  -->
 				<pitch-offset-deg> -5 </pitch-offset-deg>
 				<heading-offset-deg> 0 </heading-offset-deg>
 				<default-field-of-view-deg> 65 </default-field-of-view-deg>
@@ -491,6 +496,7 @@
 		<steering-wheel type="int">2</steering-wheel>
 		<steering-type type="string">Taildragger-steer</steering-type>	<!-- Alternativ: Taildragger-lock or TriCycle -->
 		<ismain type="bool">true</ismain>
+		<livname type="string">default</livname>
 	</voodoomaster>
 
 	<aar> 

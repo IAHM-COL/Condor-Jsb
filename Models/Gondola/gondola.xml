@@ -81,31 +81,10 @@
 		<object-name>GunsMobileLeft</object-name>
 		<object-name>GunsMobileRight</object-name>
 		<condition>
-			<or>
-				<and>
-					<property>/voodoomaster/ismain</property>
-					<or>
-						<equals>
-							<property>/sim/model/livery/name</property>
-							<value>BS-AJ</value>
-						</equals>
-						<property>/sim/model/hide-gondola</property>
-					</or>
-				</and>
-
-				<and>
-					<not>
-						<property>/voodoomaster/ismain</property>
-					</not>
-					<or>
-						<equals>
-							<property>/sim/model/livery/name</property>
-							<value>BS-AJ</value>
-						</equals>
-						<property>/sim/model/hide-gondola</property>
-					</or>
-				</and>
-			</or>
+			<equals>
+				<property>/sim/model/livery/name</property>
+				<value>BS-AJ</value>
+			</equals>
 		</condition>
 	</animation>
 
