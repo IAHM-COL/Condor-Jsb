@@ -104,12 +104,10 @@
 		<object-name>GunsMobileLeft</object-name>
 		<object-name>GunsMobileRight</object-name>
 		<condition>
-		<condition>
 			<equals>
 				<property>/sim/model/livery/name</property>
 				<value>BS-AJ</value>
 			</equals>
-		</condition>
 		</condition>
 	</animation>
 
