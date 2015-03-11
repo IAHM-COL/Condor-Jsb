@@ -72,6 +72,44 @@
       <z-m>  -1.1 </z-m>
     </offsets>
   </model>
+  
+  <animation>
+    <name>TourelledeToitGuns</name>
+    <object-name>GunsMobileLeft</object-name>
+    <object-name>GunsMobileRight</object-name>
+  </animation>
+  
+  <animation>
+    <type>rotate</type>
+    <object-name>TourelledeToitGuns</object-name>
+    <property>sim/model/turret[2]/heading</property>
+    <center>
+      <x-m> -9.38878 </x-m>
+      <y-m> 0.00 </y-m>
+      <z-m>  -1.1 </z-m>
+    </center>
+    <axis>
+      <x>  0 </x>
+      <y>  0 </y>
+      <z> -1 </z>
+    </axis>
+  </animation>
+  
+  <animation>
+    <type>rotate</type>
+    <object-name>TourelledeToitGuns</object-name>
+    <property>sim/model/turret[2]/pitch</property>
+    <center>
+      <x-m> -9.38878 </x-m>
+      <y-m> 0.00 </y-m>
+      <z-m>  -1.1 </z-m>
+    </center>
+    <axis>
+      <x> 0 </x>
+      <y> 1 </y>
+      <z> 0 </z>
+    </axis>
+  </animation>
 
 	<animation>
 		<type>select</type>

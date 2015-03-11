@@ -200,7 +200,7 @@ var turret=
 #création de l'objet    
 var forwardTurret = turret.new("ForwardTurret",0,12,"sim/model/turret[0]/heading","sim/model/turret[0]/pitch",0,0,60,0,90,60);
 var rearTurret = turret.new("RearTurret",1,13,"sim/model/turret[1]/heading","sim/model/turret[1]/pitch",0,0,60,0,90,60);
-var gondola = turret.new("Gondola",2,10,"sim/model/turret[2]/heading","sim/model/turret[2]/pitch",-30,30,60,-60,0,60);
+var gondola = turret.new("Gondola",2,10,"sim/model/turret[2]/heading","sim/model/turret[2]/pitch",350,10,60,-60,0,60);
           
 #init de l'objet
 var myListener = setlistener("sim/signals/fdm-initialized", func

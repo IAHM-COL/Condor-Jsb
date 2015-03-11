@@ -59,16 +59,16 @@
 
 			<!-- animated turrets -->
 			<turret n="0">
-				<heading type="float">0</heading>
-				<pitch type="float">0</pitch>
+				<heading>0</heading>
+				<pitch>0</pitch>
 			</turret>
 			<turret n="1">
-				<heading type="float">180</heading>
-				<pitch type="float">0</pitch>
+				<heading>180</heading>
+				<pitch>0</pitch>
 			</turret>
-			<turret n="0">
-				<heading type="float">0</heading>
-				<pitch type="float">0</pitch>
+			<turret n="2">
+				<heading>0</heading>
+				<pitch>0</pitch>
 			</turret>
 		</model>
 
@@ -191,7 +191,7 @@
 				<ground-level-nearplane-m type="double">0.01f</ground-level-nearplane-m>
 				<pitch-offset-deg>-5</pitch-offset-deg>
 				<x-offset-m archive="y">  0.361 </x-offset-m> 	<!-- Right -->
-				<y-offset-m archive="y"> -1.077 </y-offset-m> 	<!-- Up    -->
+				<y-offset-m archive="y"> -0.977 </y-offset-m> 	<!-- Up    -->
 				<z-offset-m archive="y"> -8.556 </z-offset-m> 	<!-- Back  -->
 				<pitch-offset-deg> 0 </pitch-offset-deg>
 				<heading-offset-deg> 0 </heading-offset-deg>
